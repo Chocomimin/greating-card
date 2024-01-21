@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #34322f;
+}
+
+.card {
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
+    margin-left: 14%;
+}
+
+.card:hover {
+    transform: rotate(-5deg);
+}
+
+.card:hover .outside {
+    transform: rotateY(-130deg);
+}
+
+.outside,
+.inside {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+}
+
+.inside {
+    background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
+    line-height: 3;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+}
+
+.outside {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    cursor: pointer;
+    background-color: #7e1c1c;
+}
+
+.front {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 60%;
+    margin-top: 100%;
+    font-size: 80%;
+    color: #fff;
+}
+
+.happy {
+    font-size: 100%;
+    margin-left: 15%;
+}
+
+.new_year {
+    font-size: 250%;
+    margin-left: -30%;
+    margin-top: -5%;
+    font-family: cursive;
+}
+
+.image img {
+    max-width: 100%;
+    margin-bottom: 23%;
+    margin-top: -150%;
+    max-height: 100%;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+}
